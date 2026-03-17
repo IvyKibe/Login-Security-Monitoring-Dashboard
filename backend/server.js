@@ -40,6 +40,7 @@ app.use('/api/logs', require('./routes/logs'));
 app.use('/api/dashboard', require('./routes/dashboard'));
 app.use('/api/alerts', require('./routes/alerts'));
 app.use('/api/reports', require('./routes/reports'));
+app.use('/api/suspicious', require('./routes/suspicious'));
 
 // Log analyzer endpoint
 app.post('/api/analyze', require('./controllers/logAnalyzer').analyzeLogs);
